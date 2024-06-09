@@ -1,7 +1,7 @@
 IDIR :=  ./Include
 LIBRARY_FILES:=./lib/
 
-CFLAGS:= -Wall -Wextra -pedantic -std=c99 -g -O3 -I$(IDIR)
+CFLAGS:= -Wall -Wextra -pedantic -std=c99 -g -O3 -I$(IDIR) -mtune=icelake-client
 
 _DEPS:=gapbuffer.h
 DEPS:=$(patsubst %,$(IDIR)/%,$(_DEPS))

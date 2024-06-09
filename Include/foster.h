@@ -5,6 +5,7 @@
 
 #define  MAX_BUFFLENGTH 255
 #define CTRL_KEY(k) ((k) & 0x1f)
+#define uint_16_t fa_char
 
 struct term_config{
     struct winsize winsize;
@@ -19,4 +20,5 @@ void add_tildy();
 void enable_raw_mode();
 void disable_raw_mode();
 void refresh_screen();
-void process_key_press(char c);
+void process_key_press(char *c);
+
